@@ -1,0 +1,25 @@
+.city-time-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.city-time-card-container h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.time-calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.time-calendar-container h1{
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
