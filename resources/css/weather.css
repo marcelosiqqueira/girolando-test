@@ -1,0 +1,61 @@
+.index-container {
+    background: linear-gradient(to left,
+    #8d8e8e 0%,
+    #DBDBDB 50%,
+    #DAD9D8 100%);
+
+    height: 100vh;
+}
+
+.weather-dashboard {
+    display: grid;
+    grid-template-columns: 30% 60%; /* 2 colunas */
+    grid-template-rows: auto auto; /* 2 linhas */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 40px 100px;
+}
+
+/* Ajustando cada card */
+.card {
+    min-height: 250px;
+    background: linear-gradient(to top,
+    #8d8e8e6b 0%,
+    #DBDBDB 50%,
+    #DAD9D8 100%);
+
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.806);
+}
+
+/* Ocupação das áreas específicas */
+.city-time {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.weather-info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.forecast {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.hourly-forecast {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .weather-dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+
+
