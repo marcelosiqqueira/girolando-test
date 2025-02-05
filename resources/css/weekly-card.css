@@ -1,0 +1,29 @@
+.weekly-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.weekly-card-container h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.forecast-day-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.forecast-day-container img{
+    width: 60px;
+    height: 60px;
+}
+
+.forecast-day-container span{
+    font-size: 1rem;
+    font-weight: bold;
+}
