@@ -1,0 +1,133 @@
+.weather-info-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+/* Temperatura e info do Sol */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.temp {
+    margin-bottom: 20px;
+}
+
+.temp h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.temp p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.temp span {
+    color: black;
+    font-weight: bold;
+}
+
+.sun-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre Sunrise e Sunset */
+}
+
+.sun-detail-container {
+    display: flex;
+    gap: 5px;
+}
+
+.hour-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sun-detail-container img {
+    height: 46px !important;
+}
+
+.sun-detail strong {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.sun-detail span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* Ícones SVG */
+.weather-info img,
+.stat img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ícone do Clima */
+.weather-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.weather-icon p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-icon img {
+    width: 250px;
+}
+
+/* Estatísticas do Clima */
+.weather-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+.stat img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .weather-info-card-container {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 90%;
+    }
+
+    .weather-info, .weather-icon, .weather-stats {
+        width: 100%;
+    }
+
+    .weather-stats {
+        grid-template-columns: 1fr;
+    }
+}
