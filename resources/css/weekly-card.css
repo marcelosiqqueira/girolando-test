@@ -6,6 +6,7 @@
 }
 
 .weekly-card-container h1 {
+    margin-bottom: 20px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -13,9 +14,9 @@
 .forecast-day-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 1.5rem;
-    width: 100%;
+    width: 90%;
 }
 
 .forecast-day-container img{
@@ -26,4 +27,42 @@
 .forecast-day-container span{
     font-size: 1rem;
     font-weight: bold;
+}
+
+@media (max-width: 1730px) {
+
+    .weekly-card-container {
+        padding: 1rem;
+    }
+
+    .weekly-card-container h1{
+        font-size: 1.6rem;
+    }
+
+
+    .forecast-day-container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1.5rem;
+        width: 90%;
+    }
+
+    .forecast-day-container {
+        width: auto;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .forecast-day-container {
+        padding: 0%;
+    }
+
+    .weekly-card-container h1 {
+        font-size: 1.2rem;
+    }
+
 }

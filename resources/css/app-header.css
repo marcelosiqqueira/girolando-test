@@ -30,7 +30,7 @@ header {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* Ajuste do tamanho do ícone */
+    width: 20px;
 }
 
 .location-container button {
@@ -54,4 +54,67 @@ header {
     top: 50%;
     transform: translateY(-50%);
     width: 30px;
+}
+
+.autocomplete-results {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.autocomplete-item:hover {
+    background: #f0f0f0;
+}
+
+.no-results {
+    padding: 10px;
+    color: #888;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        width: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .location-container button {
+        height: 65px;
+        font-size: 1rem;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input{
+        font-size: 1rem;
+        width: 100%;
+        height: 82px;
+        padding: 0% 18%;
+    }
+
+    .search-icon {
+        left: 9%;
+        width: 25px;
+    }
+
+    .autocomplete-results {
+        top: 5.3rem;
+    }
+
 }

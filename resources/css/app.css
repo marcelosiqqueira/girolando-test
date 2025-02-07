@@ -1,11 +1,12 @@
-/* body {
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
-
 * {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(to left,
+    #8d8e8e 0%,
+    #DBDBDB 50%,
+    #DAD9D8 100%);
 }

@@ -7,7 +7,6 @@
     gap: 20px;
 }
 
-/* Temperatura e info do Sol */
 .weather-info {
     display: flex;
     flex-direction: column;
@@ -37,8 +36,10 @@
 .sun-info {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre Sunrise e Sunset */
+    gap: 15px;
 }
+
+
 
 .sun-detail-container {
     display: flex;
@@ -48,11 +49,7 @@
 .hour-details {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.sun-detail-container img {
-    height: 46px !important;
+    gap: 10px;
 }
 
 .sun-detail strong {
@@ -66,15 +63,15 @@
     color: #555;
 }
 
+.weather-info img{
+    width: 40px;;
+}
 
-/* Ícones SVG */
-.weather-info img,
 .stat img {
     width: 24px;
     height: 24px;
 }
 
-/* Ícone do Clima */
 .weather-icon {
     display: flex;
     flex-direction: column;
@@ -92,7 +89,6 @@
     width: 250px;
 }
 
-/* Estatísticas do Clima */
 .weather-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,19 +111,37 @@
     height: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1730px) {
     .weather-info-card-container {
         flex-direction: column;
-        align-items: flex-start;
-        max-width: 90%;
     }
 
-    .weather-info, .weather-icon, .weather-stats {
-        width: 100%;
+    .weather-info {
+        flex-direction: row;
+        gap: 60px;
     }
 
-    .weather-stats {
-        grid-template-columns: 1fr;
+    .weather-icon {
+        flex-direction: row;
+    }
+
+    .sun-detail-container img {
+        width: 42px;
+    }
+
+    .hour-details {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .weather-info {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .weather-icon {
+        flex-direction: column;
     }
 }
