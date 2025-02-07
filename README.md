@@ -119,7 +119,7 @@ Para garantir que o Redis funcione corretamente no Laravel, é necessário confi
     ```
 
 
-## 4. Configurar o Ambiente 🔑
+## 5. Configurar o Ambiente 🔑
 Copie o arquivo .env.example para criar o arquivo de configuração .env:
 
 ```bash
@@ -138,7 +138,7 @@ Em seguida, defina a chave da API de previsão do tempo no arquivo .env:
 WEATHER_API_KEY=SUAS_CHAVE_AQUI
 ```
 
-## 5. Rodar o Projeto 🖥️
+## 6. Rodar o Projeto 🖥️
 Após a configuração, basta rodar o projeto localmente:
 
 * Iniciar o servidor Laravel:
@@ -156,7 +156,7 @@ npm run dev
 Certifique-se de que o Redis esteja rodando para otimizar o desempenho da aplicação.
 
 
-## 6. Rodar Testes 🧪
+## 7. Rodar Testes 🧪
 
 Execute os testes automatizados para garantir que tudo está funcionando corretamente:
 
@@ -164,7 +164,7 @@ Execute os testes automatizados para garantir que tudo está funcionando correta
 php artisan test
 ```
 
-## 7. Acessar o Projeto 🌐
+## 8. Acessar o Projeto 🌐
 
 Abra o navegador e acesse a aplicação em:
 
