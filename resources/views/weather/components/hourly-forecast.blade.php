@@ -4,51 +4,14 @@
     <h1>Previsão Horária:</h1>
 
     <div class="forecast-info-container">
-
-        <div class="hour-info-container sun-background">
-            <span>20:00</span>
-            <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-            <span>26°C</span>
-            <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Forecast Icon">
-            <span>3km/hC</span>
-        </div>
-
-        <div class="hour-info-container sun-background">
-            <span>20:00</span>
-            <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-            <span>26°C</span>
-            <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Forecast Icon">
-            <span>3km/hC</span>
-        </div>
-
-        <div class="hour-info-container sun-background">
-            <span>20:00</span>
-            <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-            <span>26°C</span>
-            <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Forecast Icon">
-            <span>3km/hC</span>
-        </div>
-
-        <div class="hour-info-container rain-background">
-            <span>20:00</span>
-            <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-            <span>26°C</span>
-            <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Forecast Icon">
-            <span>3km/hC</span>
-        </div>
-
-        <div class="hour-info-container rain-background">
-            <span>20:00</span>
-            <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-            <span>26°C</span>
-            <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Forecast Icon">
-            <span>3km/hC</span>
-        </div>
-
-
+        @foreach ($weather->hourlyForecast as $hour)
+            <div class="hour-info-container {{ $hour['backgroundClass'] }}">
+                <span>{{ $hour['time'] }}</span>
+                <img src="{{ $hour['icon'] }}" alt="Ícone do clima">
+                <span>{{ $hour['temp'] }}</span>
+                <img src="{{ asset('assets/icons/arrow.svg') }}" alt="Direção do Vento">
+                <span>{{ $hour['windSpeed'] }}</span>
+            </div>
+        @endforeach
     </div>
-
-
-
-
 </div>

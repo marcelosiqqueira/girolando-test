@@ -1,35 +1,14 @@
 @vite('resources/css/weekly-card.css')
 
-<div class="weekly-card-container card" style="justify-content: center;">
+<div class="weekly-card-container card">
     <h1>Previsão Semanal:</h1>
 
-    <div class="forecast-day-container">
-        <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-        <span>30°C</span>
-        <span>Sexta - Feira, 04 Fev</span>
-    </div>
+    @foreach ($weather->weeklyForecast as $day)
+        <div class="forecast-day-container">
+            <img src="{{ $day['icon'] }}" alt="Ícone do clima">
+            <span>{{ $day['avgTemp'] }}</span>
+            <span>{{ $day['formattedDate'] }}</span>
+        </div>
+    @endforeach
 
-    <div class="forecast-day-container">
-        <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-        <span>30°C</span>
-        <span>Sexta - Feira, 04 Fev</span>
-    </div>
-
-    <div class="forecast-day-container">
-        <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-        <span>30°C</span>
-        <span>Sexta - Feira, 04 Fev</span>
-    </div>
-
-    <div class="forecast-day-container">
-        <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-        <span>30°C</span>
-        <span>Sexta - Feira, 04 Fev</span>
-    </div>
-
-    <div class="forecast-day-container">
-        <img src="{{ asset('assets/icons/sun.svg') }}" alt="Forecast Icon">
-        <span>30°C</span>
-        <span>Sexta - Feira, 04 Fev</span>
-    </div>
 </div>
