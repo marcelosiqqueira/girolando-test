@@ -64,7 +64,7 @@ npm install
 ---
 
 
-## 3. 4️⃣ Configurar o Banco de Dados SQL Server 🗄️
+## 3. Configurar o Banco de Dados SQL Server 🗄️
 
 O projeto está utilizando o Microsoft SQL Server como banco de dados, siga estas etapas para configurá-lo corretamente no Laravel:
 
