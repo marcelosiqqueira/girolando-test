@@ -1,66 +1,175 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌦️ Weather App - Previsão do Tempo
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Weather App](./project-image.png)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Descrição do Projeto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Este projeto fornece informações meteorológicas em tempo real de forma clara e interativa. A interface é responsiva, garantindo uma experiência fluida tanto em desktop quanto em dispositivos móveis.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Principais Funcionalidades:
+- 🌡️ Temperatura atual e sensação térmica.
+- 💨 Umidade e velocidade do vento.
+- ⏳ Previsão horária e semanal.
+- 🌅 Informações sobre nascer e pôr do sol.
+- ☀️ Índice de raios UV.
+- 🌍 Suporte para múltiplas cidades.
 
-## Learning Laravel
+## Tecnologias Utilizadas ⚙️
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **PHP 8.3** - Backend do projeto.
+- **Laravel 11** - Framework PHP para desenvolvimento da aplicação.
+- **Vite** - Build tool para otimização de frontend.
+- **Redis** - Armazenamento em cache para melhorar a performance.
+- **JavaScript** - Para interatividade no frontend.
+- **Pest** - Framework de testes PHP para garantir a qualidade do código.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Instruções para Rodar o Projeto 🚀
 
-## Laravel Sponsors
+## 1. Pré-requisitos 🔧
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Antes de iniciar, verifique se você tem os seguintes itens instalados em sua máquina:
 
-### Premium Partners
+- **PHP** (versão 8.x ou superior)
+- **Composer** - Gerenciador de dependências do PHP
+- **Node.js** e **NPM** - Para gerenciamento de pacotes e execução do frontend
+- **Redis** - Para cache de dados em tempo real
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## 2. Instalar Dependências 📦
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Clone o repositório e instale as dependências:
 
-## Code of Conduct
+```bash
+git clone https://github.com/marcelosiqqueira/girolando-test.git
+cd girolando-test
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Instalar dependências do backend:
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+composer install
+```
 
-## License
+* Instalar dependências do frontend:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+```bash
+npm install
+```
+
+---
+
+
+## 3. 4️⃣ Configurar o Banco de Dados SQL Server 🗄️
+
+O projeto está utilizando o Microsoft SQL Server como banco de dados, siga estas etapas para configurá-lo corretamente no Laravel:
+
+* Instale o SQL Server e o Driver do PHP
+
+Se ainda não tiver o SQL Server instalado, faça o download e instale-o a partir do site oficial da Microsoft:
+
+[🔗 Download SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+
+Instale também o SQL Server Management Studio (SSMS) para gerenciar o banco de dados:
+
+[🔗 Download SSMS](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+
+* Instale a Extensão do SQL Server no PHP
+
+Se estiver rodando o projeto localmente, adicione o driver pdo_sqlsrv no PHP.
+
+No Windows, edite o arquivo php.ini e habilite as seguintes linhas (removendo o ; do início, se necessário):
+
+```bash
+extension=php_pdo_sqlsrv.dll
+extension=php_sqlsrv.dll
+```
+
+🔹 Importante: Certifique-se de que o SQL Server está rodando na porta 1433 e que o usuário tem permissões para acessar o banco de dados.
+
+
+
+## 4. Configurar o Redis no PHP 
+
+Certifique-se de que o Redis esteja rodando localmente. Caso não tenha o Redis instalado, você pode seguir as instruções no site oficial do Redis.
+
+Para garantir que o Redis funcione corretamente no Laravel, é necessário configurar o PHP para suportar o Redis.
+
+* Baixar e Instalar a DLL do Redis para PHP 8.3 (Windows)
+
+    Se estiver rodando o projeto no Windows, você precisará adicionar a DLL do Redis ao PHP.
+
+    1 - Faça o download da DLL compatível com PHP 8.3 no seguinte link:
+
+    https://shuchkin.ru/2024/02/phpredis-for-windows-php-8-3-php_redis-dll/
+
+
+    2 - Extraia e copie o arquivo php_redis.dll para a pasta de extensões do PHP (geralmente ext dentro da pasta do PHP).
+
+* Ativar a Extensão Redis no php.ini
+
+    Após adicionar a DLL, edite o arquivo php.ini do PHP e adicione a seguinte linha (ou remova o ; do início se já existir):
+
+    ```bash
+    extension=php_redis.dll
+    ```
+
+
+## 4. Configurar o Ambiente 🔑
+Copie o arquivo .env.example para criar o arquivo de configuração .env:
+
+```bash
+cp .env.example .env
+```
+
+Agora, gere a chave da aplicação:
+
+```bash
+php artisan key:generate
+```
+
+Em seguida, defina a chave da API de previsão do tempo no arquivo .env:
+
+```bash
+WEATHER_API_KEY=SUAS_CHAVE_AQUI
+```
+
+## 5. Rodar o Projeto 🖥️
+Após a configuração, basta rodar o projeto localmente:
+
+* Iniciar o servidor Laravel:
+
+```bash
+php artisan serve
+```
+
+* Rodar o Vite para o frontend:
+
+```bash
+npm run dev
+```
+
+Certifique-se de que o Redis esteja rodando para otimizar o desempenho da aplicação.
+
+
+## 6. Rodar Testes 🧪
+
+Execute os testes automatizados para garantir que tudo está funcionando corretamente:
+
+```bash
+php artisan test
+```
+
+## 7. Acessar o Projeto 🌐
+
+Abra o navegador e acesse a aplicação em:
+
+```bash
+http://localhost:8000
+```
+
+
